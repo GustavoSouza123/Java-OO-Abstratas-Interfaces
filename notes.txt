@@ -1,0 +1,7 @@
+gustavo:
+- codificar aplicações (OK)
+- fazer exercício 2
+
+igor:
+- codificar exercício 1
+- fazer exercício 3
