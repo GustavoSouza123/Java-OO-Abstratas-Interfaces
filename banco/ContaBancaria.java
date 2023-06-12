@@ -6,18 +6,20 @@ public abstract class ContaBancaria {
 	
 	// metodo depositar
 	public void depositar(double valor) {
-		saldo += valor;
+		if(valor >= 0) saldo += valor;
 	}
 	
 	// metodo sacar
 	public void sacar(double valor) {
-		saldo -= valor;
+		if(valor >= 0) saldo -= valor;
 	}
 	
 	// metodo transferir
 	public void transferir(double valor, ContaBancaria conta) {
-		saldo -= valor;
-		conta.saldo += valor;
+		if(valor >= 0) {
+			saldo -= valor;
+			conta.saldo += valor;
+		}
 	}
 	
 	// metodo abstrato calcularSaldo (deve ser implementado pelas subclasses)
